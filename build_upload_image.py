@@ -1,6 +1,6 @@
 import os
 
-PREFIX = "codewisdom"
+PREFIX = "shreejejurkar"
 VERSION = "0.2.0"
 
 base_path = os.getcwd()
@@ -31,7 +31,7 @@ def init_docker_build_paths():
 
 def docker_login():
     username = os.getenv("DOCKER_USERNAME")
-    docker_hub_address = os.getenv("DOCKER_HUB_ADDRESS") or "registry.cn-hangzhou.aliyuncs.com"
+    docker_hub_address = os.getenv("DOCKER_HUB_ADDRESS") or "https://hub.docker.com/u/shreejejurkar"
     print(f"[DOCKER HUB LOGIN] login username:{username} address:{docker_hub_address}")
     print(f"[DOCKER HUB LOGIN] You should input your root password first and then dockerhub password")
     docker_login = os.system(f"sudo docker login --username={username} {docker_hub_address}")

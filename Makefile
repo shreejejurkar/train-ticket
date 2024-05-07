@@ -1,6 +1,6 @@
 # Codewisdom Train-Ticket system
 
-Repo=codewisdom
+Repo=shreejejurkar
 Tag=latest
 Namespace="default"
 DeployArgs=""
